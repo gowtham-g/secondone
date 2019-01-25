@@ -1,0 +1,30 @@
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" ui-sref="second">Amazon Pro</a>
+    </div>
+    <ul class="nav navbar-nav">
+      
+       <li><a>cart <i class="fas fa-shopping-cart"></i><span class="badge">{{cart.length}}</span></a></li>
+   
+         <li><a ui-sref="login">Log out<span class="badge"></span></a></li>
+    </ul>
+    <nav aria-label="Page navigation">
+
+</nav>
+  </div>
+  </nav>
+
+
+<div class="container-fluid">
+<button class="btn btn-info" ng-click = "back()"> Back</button>
+<li style="list-style: none" ng-repeat = "i in array">
+ <div class="col-lg-6">
+      <img style="width: 500px;height: 800px" ng-src= "{{ProductCollections.mobiles[i.id].ProductPicUrl}}" >
+  </div>
+   <div class="col-lg-6">
+     <h1>{{ProductCollections.mobiles[i.id].Description}}</h1>
+    </div>
+</li>
+
+</div>

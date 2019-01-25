@@ -1,0 +1,33 @@
+
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Amazon Pro</a>
+    </div>
+    <ul class="nav navbar-nav">
+      
+       <li><a>cart <i class="fas fa-shopping-cart"></i><span class="badge"> {{cart.length}}</span></a></li>
+   
+         <li><a href="#/"> Log out<span class="badge"></span></a></li>
+    </ul>
+    <nav aria-label="Page navigation">
+
+</nav>
+  </div>
+  </nav>
+
+
+   <div class="row">
+	<div class="col-lg-12">
+<button class="btn btn-info" ng-click = "back()"> Back</button>
+<li style="list-style: none" ng-repeat = "i in array">
+<div class="col-lg-6">
+   <img style="width: 500px;height: 800px" ng-src= "{{ProductCollections.accessories[i.id].ProductPicUrl}}" > 
+</div>
+ 
+
+<div class="col-lg-6">
+       <h1>{{ProductCollections.accessories[i.id].Description}}</h1>
+   </div>
+   </li>
+</div>

@@ -1,0 +1,98 @@
+{
+	"accessories": [
+		{
+			
+			"Description": "Notebook Basic 15 with 2,80 GHz quad core, 15\" LCD, 4 GB DDR3 RAM, 500 GB Hard Disc, Windows 8 Pro",
+			"Name": "Notebook Basic 15",
+			"ProductPicUrl": "./img/accessories/model1.jpg",
+			"Price" :150,
+			"Catagory":"accessories",
+			"count":0
+		
+		},
+		{
+		
+			"Description": "Notebook Basic 17 with 2,80 GHz quad core, 17\" LCD, 4 GB DDR3 RAM, 500 GB Hard Disc, Windows 8 Pro",
+			"Name": "Notebook Basic 17",
+			"ProductPicUrl": "./img/accessories/model2.jpg",
+			"Price" :80,
+			"Catagory":"accessories",
+			"count":0
+		},
+		{
+		
+			"Description": "Notebook Basic 17 with 2,80 GHz quad core, 17\" LCD, 4 GB DDR3 RAM, 500 GB Hard Disc, Windows 8 Pro",
+			"Name": "Notebook Basic 17",
+			"ProductPicUrl": "./img/accessories/model3.jpg",
+			"Price" :65,
+			"Catagory":"accessories",
+			"count":0
+		}
+		
+	],
+	"fruits": [
+		{
+			
+			"Description": "Notebook Basic 15 with 2,80 GHz quad core, 15\" LCD, 4 GB DDR3 RAM, 500 GB Hard Disc, Windows 8 Pro",
+			"Name": "Notebook Basic 15",
+			"ProductPicUrl": "./img/fruits/model1.jpg",
+			"Price" :48,
+			"Catagory":"fruits",
+			"count":0
+		
+		},
+		{
+		
+			"Description": "Notebook Basic 17 with 2,80 GHz quad core, 17\" LCD, 4 GB DDR3 RAM, 500 GB Hard Disc, Windows 8 Pro",
+			"Name": "Notebook Basic 17",
+			"ProductPicUrl": "./img/fruits/model2.jpg",
+			"Price" :65,
+			"Catagory":"fruits",
+			"count":0
+		},
+		{
+		
+			"Description": "Notebook Basic 17 with 2,80 GHz quad core, 17\" LCD, 4 GB DDR3 RAM, 500 GB Hard Disc, Windows 8 Pro",
+			"Name": "Notebook Basic 17",
+			"ProductPicUrl": "./img/fruits/model3.jpg",
+			"Price" :78,
+			"Catagory":"fruits",
+			"count":0
+		}
+		
+	],
+		"mobiles": [
+		{
+			
+			"Description": "Notebook Basic 15 with 2,80 GHz quad core, 15\" LCD, 4 GB DDR3 RAM, 500 GB Hard Disc, Windows 8 Pro",
+			"Name": "Notebook Basic 15",
+			"ProductPicUrl": "./img/mobiles/model1.jpg",
+			"Price" :36,
+			"Catagory":"mobiles",
+			"count":0
+		
+		},
+		{
+		
+			"Description": "Notebook Basic 17 with 2,80 GHz quad core, 17\" LCD, 4 GB DDR3 RAM, 500 GB Hard Disc, Windows 8 Pro",
+			"Name": "Notebook Basic 17",
+			"ProductPicUrl": "./img/mobiles/model2.jpeg",
+			"Price" :32,
+			"Catagory":"mobiles",
+			"count":0
+
+		},
+		{
+		
+			"Description": "Notebook Basic 17 with 2,80 GHz quad core, 17\" LCD, 4 GB DDR3 RAM, 500 GB Hard Disc, Windows 8 Pro",
+			"Name": "Notebook Basic 17",
+			"ProductPicUrl": "./img/mobiles/model3.jpg",
+			"Price" :90,
+			"Catagory":"mobiles",
+			"count":0
+
+		}
+		
+	]
+	
+}

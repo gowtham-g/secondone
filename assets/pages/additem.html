@@ -1,0 +1,53 @@
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" ui-sref="second">Amazon Pro</a>
+    </div>
+    <ul class="nav navbar-nav">
+
+      <li><a ui-sref="second">Product Page</a></li>
+         <li><a>cart  <i class="fas fa-shopping-cart"></i><span class="badge"> {{cart.length}}</span></a></li>
+    </ul>
+  </div>
+</nav>
+
+<style type="text/css">
+  #tab{
+    padding-left: 100px;
+  }
+  table {
+
+    border-collapse: collapse;
+    width: 50%;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 0.5px solid #ddd;
+}
+</style>
+<div class="container">
+
+
+<div id="tab" class="col-lg-9" ng-controller = 'secondController'>
+
+<table  ng-repeat = "i in cart track by $index ">
+
+  <tr>
+    <th><img ng-src={{i.ProductPicUrl}}></th>
+    <th>{{i.Name}}</th>
+    <th>${{i.Price}}</th>
+   <!--    <th><h1 class="btn btn-danger" ng-click="cancel($index)">Remove Item</h1></th> -->
+  </tr>
+</table>
+</div>
+<br><br><br><br>
+<div class="col-3"> 
+  <h1>Total: ${{value}}</h1>
+  <a ui-sref="fourth" class="btn btn-success">Buy now</a>
+</div>
+
+<div ng-if="cart.length==0" class="alert alert-danger">Your cart is empty</div>
+</div>
+

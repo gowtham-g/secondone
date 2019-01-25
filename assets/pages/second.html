@@ -1,0 +1,139 @@
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" ui-sref="home">Amazon Pro</a>
+    </div>
+    <ul class="nav navbar-nav">
+     <li><a>cart <i class="fas fa-shopping-cart"></i><span class="badge"> {{cart.length}}</span></a></li>
+     <li><a  ui-sref="home"> Log out<span class="badge"></span></a></li>
+   </ul>
+   </div>
+</nav>
+
+
+  <br>
+
+
+  <div class="container">
+    <ul  class="nav nav-tabs nav-justified">
+      <li ><a class="btn btn-info" ng-click="validate('mobile')">Mobile</a></li>
+      <li><a  class="btn btn-success" ng-click="validate('fruits')">Fruits</a></li>
+      <li><a  class="btn btn-warning" ng-click="validate('accessories')">Accessories</a></li>
+    </ul>
+
+  </div>
+
+
+
+  <div style="margin-left: 150px;margin-top: 150px ">
+  <div ng-show="mobile"> 
+    <div class="container-fluid">
+       <div class="row" >
+        <div class="col-lg-12">
+          <ul>
+            <li id="productli" ng-repeat = "ml in ProductCollections.mobiles">
+
+              <br>
+              <img  style="width: 200px;height: 300px" id={{$index}} ng-click="preview($index)" src= "{{ml.ProductPicUrl}}"><br>
+
+              <input type="checkbox" ng-model="checking" ng-change = "checking?c=1:c=0" ng-click ="addcheck($event,ml)" class="checkbox" ng-model="checked">
+              <div>{{ml.Name}} {{ml.ProductId}}</div>
+              <div> $ {{ml.Price}}</div>
+
+              <div ng-class="c==0?'disabled':''">
+                <button class="btn btn-info" ng-init="c=0" ng-click="plus($index,$event,ml);c=c+1">+</button>
+                <span>{{c}}</span>
+                <button  class="btn btn-warning" ng-click="minus(ml,$index);c=c-1">-</button>
+              </div>  
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    </div>
+
+
+
+  <div ng-show="fruits"> 
+    <div class="container-fluid">
+       <div class="row" >
+        <div class="col-lg-12">
+          <ul>
+            <li id="productli" ng-repeat = "ml in ProductCollections.fruits">
+
+
+              <br>
+              <img  style="width: 200px;height: 300px" id={{$index}} ng-click="previewfruit($index)" src= "{{ml.ProductPicUrl}}"><br>
+
+              <input type="checkbox" ng-model="checking" ng-change = "checking?c=1:c=0" ng-click ="addcheck($event,ml)" class="checkbox" ng-model="checked">
+              <div>{{ml.Name}} {{ml.ProductId}}</div>
+              <div> $ {{ml.Price}}</div>
+              <div ng-class="c==0?'disabled':''">
+                <button class="btn btn-info" ng-init="c=1" ng-click="plus($index,$event,ml);c=c+1">+</button>
+                <span>{{c}}</span>
+                <button  class="btn btn-warning" ng-click="minus(ml,$index);c=c-1">-</button>
+              </div>
+
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div ng-show="accessories"> 
+    <div class="container-fluid">
+       <div class="row" >
+        <div class="col-lg-12">
+          <ul>
+            <li id="productli" ng-repeat = "ml in ProductCollections.accessories">
+
+
+              <br>
+              <img  style="width: 200px;height: 300px" id={{$index}} ng-click="previewaccess($index)" src= "{{ml.ProductPicUrl}}">
+              <br>
+
+              <input type="checkbox" ng-model="checking" ng-change = "checking?c=1:c=0" ng-click ="addcheck($event,ml)" class="checkbox" ng-model="checked">
+              <div>{{ml.Name}} {{ml.ProductId}}</div>
+              <div> $ {{ml.Price}}</div>
+              <div ng-class="c==0?'disabled':''">
+                <button class="btn btn-info" ng-init="c=0" ng-click="plus($index,$event,ml);c=c+1">+</button>
+                <span>{{c}}</span>
+                <button  class="btn btn-warning" ng-click="minus(ml,$index);c=c-1">-</button>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+  </div>
+
+
+
+
+
+
+  <div>
+    <a class="btn btn-success" style="margin-left: 80%;margin-top: 100px" ng-click="cartItembtn(msg)" >Cart Item</a>
+  </div>
+
+  <div ui-view></div>
+
+
+
+
+
+
+
+

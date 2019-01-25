@@ -1,0 +1,41 @@
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">WebSiteName</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Home</a></li>
+      <li><a href="#!second">Product Page</a></li>
+      <li><a href="#!third">Product Page</a></li>
+         <li><a>cart  <i class="fas fa-shopping-cart"></i><span class="badge"> {{cart.length}}</span></a></li>
+    </ul>
+  </div>
+</nav>
+
+
+
+<div class="row">
+	<div class="col-lg-6">cart Items
+
+<li ng-repeat = "i in cart">
+   <img src= "{{ProductCollections.accessories[i.id].ProductPicUrl}}" >
+   {{ProductCollections.accessories[i.id].Name}}
+   {{ProductCollections.accessories[i.id].ProductId}}
+ 
+  <span style="color:red;border: 2px solid black;border-radius: 20px  ">${{ProductCollections.accessories[i.id].Price}}</span>
+  
+  <button class="btn btn-danger" ng-click = "cancel($index)">cancel</button>
+ </li>
+</div>
+<div class="col-lg-6">
+<button class="btn btn-info"  ng-click = "add()">AddTotal</button>
+
+	<h1>Total:{{value}}</h1>
+  <a href="#!fourth" class="btn btn-success" >Confirm Pay</a>
+</div>
+
+</div>
+
+<div ng-if="cart.length==0" class="alert alert-danger">Your cart is empty</div>
+
+
